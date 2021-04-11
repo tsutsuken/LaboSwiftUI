@@ -7,9 +7,27 @@
 
 import SwiftUI
 
+class FirstViewModel: ObservableObject {
+    @Published var count = 0
+    @Published var name = ""
+}
+
 struct FirstView: View {
+    @ObservedObject var viewModel = FirstViewModel()
+    
     var body: some View {
-        Text("First")
+        VStack {
+            Text("カウント: \(viewModel.count)")
+                .padding(8)
+            Button(action: {
+                self.viewModel.count += 1
+            }) {
+                Text("カウントを足す")
+            }
+            Text("名前: \(viewModel.name)")
+                .padding(8)
+            TextField("名前", text: $viewModel.name)
+        }
     }
 }
 
