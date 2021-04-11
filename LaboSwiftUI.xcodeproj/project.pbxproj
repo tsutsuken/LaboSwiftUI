@@ -15,6 +15,8 @@
 		BE18BC852621E99F00282243 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE18BC842621E99F00282243 /* Preview Assets.xcassets */; };
 		BE18BC902621E99F00282243 /* LaboSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BC8F2621E99F00282243 /* LaboSwiftUITests.swift */; };
 		BE18BC9B2621E99F00282243 /* LaboSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BC9A2621E99F00282243 /* LaboSwiftUIUITests.swift */; };
+		BE18BCBA2622E29A00282243 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BCB92622E29A00282243 /* FirstView.swift */; };
+		BE18BCC22622E35A00282243 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BCC12622E35A00282243 /* SecondView.swift */; };
 		BF5653EB3D16870C2AD41296 /* Pods_LaboSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7026E8E845D4AF25CD0CBF2F /* Pods_LaboSwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		BE18BC962621E99F00282243 /* LaboSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaboSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE18BC9A2621E99F00282243 /* LaboSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboSwiftUIUITests.swift; sourceTree = "<group>"; };
 		BE18BC9C2621E99F00282243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE18BCB92622E29A00282243 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		BE18BCC12622E35A00282243 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		FD0892F112E94A4B34259B6C /* Pods-LaboSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaboSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-LaboSwiftUI/Pods-LaboSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +111,6 @@
 				088EFD4B5CD4122692BB43D4 /* Pods-LaboSwiftUITests.debug.xcconfig */,
 				15CB5915059E6584180D7521 /* Pods-LaboSwiftUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,9 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				BE18BC7D2621E99E00282243 /* LaboSwiftUIApp.swift */,
-				BE18BC7F2621E99E00282243 /* ContentView.swift */,
 				BE18BC812621E99F00282243 /* Assets.xcassets */,
 				BE18BC862621E99F00282243 /* Info.plist */,
+				BE18BCB42622E26300282243 /* View */,
 				BE18BC832621E99F00282243 /* Preview Content */,
 			);
 			path = LaboSwiftUI;
@@ -169,6 +172,16 @@
 				BE18BC9C2621E99F00282243 /* Info.plist */,
 			);
 			path = LaboSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		BE18BCB42622E26300282243 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE18BC7F2621E99E00282243 /* ContentView.swift */,
+				BE18BCB92622E29A00282243 /* FirstView.swift */,
+				BE18BCC12622E35A00282243 /* SecondView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +386,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE18BC802621E99E00282243 /* ContentView.swift in Sources */,
+				BE18BCBA2622E29A00282243 /* FirstView.swift in Sources */,
+				BE18BCC22622E35A00282243 /* SecondView.swift in Sources */,
 				BE18BC7E2621E99E00282243 /* LaboSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
