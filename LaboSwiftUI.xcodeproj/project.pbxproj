@@ -19,6 +19,8 @@
 		BE18BCC22622E35A00282243 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BCC12622E35A00282243 /* SecondView.swift */; };
 		BE18BCCC26230F0900282243 /* StudyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BCCB26230F0900282243 /* StudyGroup.swift */; };
 		BE18BCD426230F1200282243 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BCD326230F1200282243 /* Event.swift */; };
+		BE5E535A263C0A7000E61F75 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E5359263C0A7000E61F75 /* DetailView.swift */; };
+		BE5E5370263C1EB000E61F75 /* EventRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E536F263C1EB000E61F75 /* EventRowView.swift */; };
 		BF5653EB3D16870C2AD41296 /* Pods_LaboSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7026E8E845D4AF25CD0CBF2F /* Pods_LaboSwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		BE18BCC12622E35A00282243 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		BE18BCCB26230F0900282243 /* StudyGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyGroup.swift; sourceTree = "<group>"; };
 		BE18BCD326230F1200282243 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		BE5E5359263C0A7000E61F75 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BE5E536F263C1EB000E61F75 /* EventRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowView.swift; sourceTree = "<group>"; };
 		FD0892F112E94A4B34259B6C /* Pods-LaboSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaboSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-LaboSwiftUI/Pods-LaboSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,9 +186,11 @@
 		BE18BCB42622E26300282243 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BE5E536E263C1E8400E61F75 /* Component */,
 				BE18BC7F2621E99E00282243 /* ContentView.swift */,
 				BE18BCB92622E29A00282243 /* FirstView.swift */,
 				BE18BCC12622E35A00282243 /* SecondView.swift */,
+				BE5E5359263C0A7000E61F75 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +210,14 @@
 				BE18BCD326230F1200282243 /* Event.swift */,
 			);
 			path = Conpass;
+			sourceTree = "<group>";
+		};
+		BE5E536E263C1E8400E61F75 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				BE5E536F263C1EB000E61F75 /* EventRowView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,7 +423,9 @@
 			files = (
 				BE18BCCC26230F0900282243 /* StudyGroup.swift in Sources */,
 				BE18BC802621E99E00282243 /* ContentView.swift in Sources */,
+				BE5E5370263C1EB000E61F75 /* EventRowView.swift in Sources */,
 				BE18BCBA2622E29A00282243 /* FirstView.swift in Sources */,
+				BE5E535A263C0A7000E61F75 /* DetailView.swift in Sources */,
 				BE18BCC22622E35A00282243 /* SecondView.swift in Sources */,
 				BE18BCD426230F1200282243 /* Event.swift in Sources */,
 				BE18BC7E2621E99E00282243 /* LaboSwiftUIApp.swift in Sources */,

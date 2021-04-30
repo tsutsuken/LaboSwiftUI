@@ -8,13 +8,13 @@
 import Foundation
 
 struct Event: Decodable, Identifiable {
-    var id: Int
-    var title: String
-    var eventUrl: String
-    var hashTag: String
-    var startDate: String
-    var address: String
-    var ownerDisplayName: String
+    var id: Int = 0
+    var title: String = ""
+    var eventUrl: String = ""
+    var hashTag: String = ""
+    var startDate: String = ""
+    var address: String = ""
+    var ownerDisplayName: String = ""
 
     enum CodingKeys: String, CodingKey {
         case id = "event_id"

@@ -40,7 +40,9 @@ struct SecondView: View {
     var body: some View {
         NavigationView {
             List(viewModel.eventData) { event in
-                Text("\(event.title)")
+                NavigationLink(destination: DetailView(event: event)) {
+                    EventRowView(event: event)
+                }
             }
             .navigationBarTitle(Text("YUMEMI.swift一覧"))
         }
