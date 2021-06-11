@@ -6,36 +6,44 @@
 //
 
 import SwiftUI
+import Combine
 
 class SecondViewModel: ObservableObject {
     @Published var eventData: [Event] = []
-//    @Published var eventData: [Event] = mockEventsData
     
-    // connpass's event search API
-    private let urlLink = "https://connpass.com/api/v1/event/?keyword=YUMEMI.swift"
+    private let connpassEventRepository: ConnpassEventRepository
+    private var disposables = Set<AnyCancellable>()
 
     init() {
-        fetchEventData()
+        connpassEventRepository = ConnpassEventRepository()
     }
-
+    
     func fetchEventData() {
-        URLSession.shared.dataTask(with: URL(string: urlLink)!) { (data, response, error) in
-            guard let data = data else { return }
-            let decoder: JSONDecoder = JSONDecoder()
-            do {
-                let searchedResultData = try decoder.decode(StudyGroup.self, from: data)
-                DispatchQueue.main.async {
-                    self.eventData = searchedResultData.events.reversed()
+        connpassEventRepository.fetchEventData()
+            .receive(on: DispatchQueue.main)
+            .sink(
+              receiveCompletion: { value in
+                switch value {
+                case .failure(let error):
+                    print("fetchEventData error: \(error.localizedDescription)")
+                case .finished:
+                    print("fetchEventData finished")
                 }
-            } catch {
-                print("json convert failed in JSONDecoder. " + error.localizedDescription)
-            }
-        }.resume()
+              },
+              receiveValue: { [weak self] response in
+                guard let self = self else { return }
+                self.eventData = response.events.reversed()
+            })
+            .store(in: &disposables)
     }
 }
 
 struct SecondView: View {
     @ObservedObject var viewModel = SecondViewModel()
+    
+    init() {
+        viewModel.fetchEventData()
+    }
     
     var body: some View {
         NavigationView {

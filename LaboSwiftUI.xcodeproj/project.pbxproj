@@ -21,6 +21,9 @@
 		BE18BCD426230F1200282243 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BCD326230F1200282243 /* Event.swift */; };
 		BE5E535A263C0A7000E61F75 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E5359263C0A7000E61F75 /* DetailView.swift */; };
 		BE5E5370263C1EB000E61F75 /* EventRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E536F263C1EB000E61F75 /* EventRowView.swift */; };
+		BEFAF794263D6E6400038D0A /* ConnpassEventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFAF793263D6E6400038D0A /* ConnpassEventRepository.swift */; };
+		BEFAF79A263D738F00038D0A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFAF799263D738F00038D0A /* APIError.swift */; };
+		BEFAF7A0263D926500038D0A /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFAF79F263D926500038D0A /* Parsing.swift */; };
 		BF5653EB3D16870C2AD41296 /* Pods_LaboSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7026E8E845D4AF25CD0CBF2F /* Pods_LaboSwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +71,9 @@
 		BE18BCD326230F1200282243 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		BE5E5359263C0A7000E61F75 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		BE5E536F263C1EB000E61F75 /* EventRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowView.swift; sourceTree = "<group>"; };
+		BEFAF793263D6E6400038D0A /* ConnpassEventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnpassEventRepository.swift; sourceTree = "<group>"; };
+		BEFAF799263D738F00038D0A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		BEFAF79F263D926500038D0A /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		FD0892F112E94A4B34259B6C /* Pods-LaboSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaboSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-LaboSwiftUI/Pods-LaboSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +155,9 @@
 			children = (
 				BE18BC7D2621E99E00282243 /* LaboSwiftUIApp.swift */,
 				BE18BCB42622E26300282243 /* View */,
+				BEFAF792263D6DD300038D0A /* Repository */,
 				BE18BCC6262307BB00282243 /* Model */,
+				BEFAF79E263D925000038D0A /* Utility */,
 				BE18BC812621E99F00282243 /* Assets.xcassets */,
 				BE18BC862621E99F00282243 /* Info.plist */,
 				BE18BC832621E99F00282243 /* Preview Content */,
@@ -198,6 +206,7 @@
 		BE18BCC6262307BB00282243 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BEFAF799263D738F00038D0A /* APIError.swift */,
 				BE18BCCA26230EF500282243 /* Conpass */,
 			);
 			path = Model;
@@ -218,6 +227,22 @@
 				BE5E536F263C1EB000E61F75 /* EventRowView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		BEFAF792263D6DD300038D0A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				BEFAF793263D6E6400038D0A /* ConnpassEventRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		BEFAF79E263D925000038D0A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BEFAF79F263D926500038D0A /* Parsing.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,13 +447,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE18BCCC26230F0900282243 /* StudyGroup.swift in Sources */,
+				BEFAF79A263D738F00038D0A /* APIError.swift in Sources */,
 				BE18BC802621E99E00282243 /* ContentView.swift in Sources */,
 				BE5E5370263C1EB000E61F75 /* EventRowView.swift in Sources */,
 				BE18BCBA2622E29A00282243 /* FirstView.swift in Sources */,
 				BE5E535A263C0A7000E61F75 /* DetailView.swift in Sources */,
 				BE18BCC22622E35A00282243 /* SecondView.swift in Sources */,
+				BEFAF7A0263D926500038D0A /* Parsing.swift in Sources */,
 				BE18BCD426230F1200282243 /* Event.swift in Sources */,
 				BE18BC7E2621E99E00282243 /* LaboSwiftUIApp.swift in Sources */,
+				BEFAF794263D6E6400038D0A /* ConnpassEventRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
