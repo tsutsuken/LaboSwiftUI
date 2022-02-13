@@ -24,13 +24,6 @@ struct ContentView: View {
                         Text("First")
                     }
             }
-            SecondView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "person")
-                        Text("Second")
-                    }
-            }
         }
     }
 }
