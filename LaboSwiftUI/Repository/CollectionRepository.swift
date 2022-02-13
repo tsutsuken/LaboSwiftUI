@@ -14,7 +14,7 @@ class CollectionRepository: CollectionRepositoryProtocol {
     private let session: URLSession
     
     init(session: URLSession = .shared) {
-      self.session = session
+        self.session = session
     }
     
     func fetchCollectionData() -> AnyPublisher<CollectionsResponse, APIError> {
@@ -22,18 +22,18 @@ class CollectionRepository: CollectionRepositoryProtocol {
     }
     
     func fetchData<T>(with components: URLComponents) -> AnyPublisher<T, APIError> where T: Decodable {
-      guard let url = components.url else {
-        let error = APIError(NSError(domain: "", code: 401, userInfo: nil))
-        return Fail(error: error).eraseToAnyPublisher()
-      }
-
-      return session.dataTaskPublisher(for: URLRequest(url: url))
-        .mapError { error in
-          .networkError(description: error.localizedDescription)
+        guard let url = components.url else {
+          let error = APIError(NSError(domain: "", code: 401, userInfo: nil))
+          return Fail(error: error).eraseToAnyPublisher()
         }
-        .flatMap(maxPublishers: .max(1)) { output in
-          decode(output.data)
-        }
-        .eraseToAnyPublisher()
+        
+        return session.dataTaskPublisher(for: URLRequest(url: url))
+            .mapError { error in
+              .networkError(description: error.localizedDescription)
+            }
+            .flatMap(maxPublishers: .max(1)) { output in
+              decode(output.data)
+            }
+            .eraseToAnyPublisher()
     }
 }
