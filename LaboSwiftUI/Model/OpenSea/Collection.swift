@@ -12,5 +12,7 @@ struct Collection: Decodable, Identifiable {
     var name: String?
     var imageUrl: String?
     var bannerImageUrl: String?
+    var description: String?
+    var stats: CollectionStats?
 }
 
