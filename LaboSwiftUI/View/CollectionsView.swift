@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  CollectionsView.swift
 //  LaboSwiftUI
 //
 //  Created by Ken Tsutsumi on 2022/02/12.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-class HomeViewModel: ObservableObject {
+class CollectionsViewModel: ObservableObject {
     @Published var collections: [Collection] = []
     
     private let collectionRepository: CollectionRepository
@@ -35,13 +35,14 @@ class HomeViewModel: ObservableObject {
                     guard let self = self else { return }
                     self.collections = response.collections
                     print("fetchCollectionData receiveValue")
+                    print("collections: \(self.collections)")
                 })
             .store(in: &disposables)
     }
 }
 
-struct HomeView: View {
-    @ObservedObject var viewModel = HomeViewModel()
+struct CollectionsView: View {
+    @ObservedObject var viewModel = CollectionsViewModel()
     
     init() {
         viewModel.fetchCollectionData()
@@ -60,8 +61,8 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct CollectionsView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        CollectionsView()
     }
 }

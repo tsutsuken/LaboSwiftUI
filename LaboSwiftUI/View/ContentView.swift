@@ -10,11 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
-            HomeView()
+            CollectionsView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "house")
-                        Text("Home")
+                        Image(systemName: "rectangle.portrait")
+                        Text("Collections")
                     }
                 }
             FirstView()
