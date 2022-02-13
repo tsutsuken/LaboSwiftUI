@@ -52,7 +52,7 @@ struct CollectionsView: View {
         NavigationView {
             List(viewModel.collections) { collection in
                 NavigationLink(destination: CollectionDetailView(collection: collection)) {
-                    Text("\(collection.name ?? "")")
+                    CollectionListItem(collection: collection)
                 }
             }
             .navigationTitle("Collections")
