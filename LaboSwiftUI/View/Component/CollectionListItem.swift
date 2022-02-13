@@ -15,14 +15,18 @@ struct CollectionListItem: View {
             AsyncImage(url: URL(string: collection.imageUrl ?? "")) { image in
                 image.resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(maxWidth: 64, maxHeight: 64)
+                    .frame(maxWidth: 48, maxHeight: 48)
+                    .clipShape(Circle())
             } placeholder: {
-                Image(systemName: "photo")
+                Image(systemName: "photo.circle")
                     .resizable()
-                    .frame(width: 64, height: 64, alignment: .center)
+                    .frame(width: 48, height: 48, alignment: .center)
+                    .clipShape(Circle())
             }
             Text("\(collection.name ?? "")")
+                .font(.headline)
         }
+        .frame(height: 72)
         
     }
 }
