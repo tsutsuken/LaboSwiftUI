@@ -50,7 +50,9 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             List(viewModel.collections) { collection in
-                Text("\(collection.name ?? "")")
+                NavigationLink(destination: CollectionDetailView(collection: collection)) {
+                    Text("\(collection.name ?? "")")
+                }
             }
             .navigationTitle("Collections")
         }

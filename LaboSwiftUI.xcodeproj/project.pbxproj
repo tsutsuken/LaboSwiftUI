@@ -20,6 +20,7 @@
 		BE5C4A3C27B7D2BD00F0C114 /* CollectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C4A3B27B7D2BD00F0C114 /* CollectionRepository.swift */; };
 		BE5C4A3F27B7D40C00F0C114 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C4A3E27B7D40C00F0C114 /* Collection.swift */; };
 		BE5C4A4127B7E59600F0C114 /* CollectionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C4A4027B7E59600F0C114 /* CollectionsResponse.swift */; };
+		BE5C4A4427B8D89600F0C114 /* CollectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C4A4327B8D89600F0C114 /* CollectionDetailView.swift */; };
 		BEFAF79A263D738F00038D0A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFAF799263D738F00038D0A /* APIError.swift */; };
 		BEFAF7A0263D926500038D0A /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFAF79F263D926500038D0A /* Parsing.swift */; };
 		BF5653EB3D16870C2AD41296 /* Pods_LaboSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7026E8E845D4AF25CD0CBF2F /* Pods_LaboSwiftUITests.framework */; };
@@ -68,6 +69,7 @@
 		BE5C4A3B27B7D2BD00F0C114 /* CollectionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRepository.swift; sourceTree = "<group>"; };
 		BE5C4A3E27B7D40C00F0C114 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		BE5C4A4027B7E59600F0C114 /* CollectionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsResponse.swift; sourceTree = "<group>"; };
+		BE5C4A4327B8D89600F0C114 /* CollectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDetailView.swift; sourceTree = "<group>"; };
 		BEFAF799263D738F00038D0A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		BEFAF79F263D926500038D0A /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		FD0892F112E94A4B34259B6C /* Pods-LaboSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaboSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-LaboSwiftUI/Pods-LaboSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				BE18BC7F2621E99E00282243 /* ContentView.swift */,
 				BE18BCB92622E29A00282243 /* FirstView.swift */,
 				BE5C4A3927B7CABE00F0C114 /* HomeView.swift */,
+				BE5C4A4327B8D89600F0C114 /* CollectionDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				BEFAF7A0263D926500038D0A /* Parsing.swift in Sources */,
 				BE18BC7E2621E99E00282243 /* LaboSwiftUIApp.swift in Sources */,
 				BE5C4A4127B7E59600F0C114 /* CollectionsResponse.swift in Sources */,
+				BE5C4A4427B8D89600F0C114 /* CollectionDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
