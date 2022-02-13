@@ -9,6 +9,6 @@ import Foundation
 
 struct Collection: Decodable, Identifiable {
     let id = UUID()
-    var name: String = ""
+    var name: String?
 }
 
