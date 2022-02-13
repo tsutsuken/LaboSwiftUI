@@ -29,7 +29,7 @@ class CollectionRepository: CollectionRepositoryProtocol {
         
         return session.dataTaskPublisher(for: URLRequest(url: url))
             .mapError { error in
-              .networkError(description: error.localizedDescription)
+              .networkError(error)
             }
             .flatMap(maxPublishers: .max(1)) { output in
               decode(output.data)

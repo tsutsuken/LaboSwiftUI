@@ -8,8 +8,8 @@
 import Foundation
 
 enum APIError: Error {
-    case parseError(description: String)
-    case networkError(description: String)
+    case parseError(Error)
+    case networkError(Error)
     case systemError(Error)
     
     init(_ error: Error) {
