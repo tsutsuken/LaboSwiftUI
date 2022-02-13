@@ -34,7 +34,7 @@ class HomeViewModel: ObservableObject {
                 receiveValue: { [weak self] response in
                     guard let self = self else { return }
                     self.collections = response.collections
-                    print("fetchCollectionData success: \(self.collections)")
+                    print("fetchCollectionData receiveValue")
                 })
             .store(in: &disposables)
     }
