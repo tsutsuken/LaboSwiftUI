@@ -52,9 +52,9 @@ struct HomeView: View {
             List(viewModel.collections) { collection in
                 Text("\(collection.name)")
             }
-            .navigationBarTitle(Text("Collections"))
+            .navigationTitle("Collections")
         }
-        
+        .navigationViewStyle(.stack)
     }
 }
 
