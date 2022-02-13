@@ -10,5 +10,7 @@ import Foundation
 struct Collection: Decodable, Identifiable {
     let id = UUID()
     var name: String?
+    var imageUrl: String?
+    var bannerImageUrl: String?
 }
 
