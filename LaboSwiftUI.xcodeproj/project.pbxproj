@@ -20,6 +20,9 @@
 		BE18BCCC26230F0900282243 /* StudyGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BCCB26230F0900282243 /* StudyGroup.swift */; };
 		BE18BCD426230F1200282243 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BCD326230F1200282243 /* Event.swift */; };
 		BE5C4A3A27B7CABE00F0C114 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C4A3927B7CABE00F0C114 /* HomeView.swift */; };
+		BE5C4A3C27B7D2BD00F0C114 /* CollectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C4A3B27B7D2BD00F0C114 /* CollectionRepository.swift */; };
+		BE5C4A3F27B7D40C00F0C114 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C4A3E27B7D40C00F0C114 /* Collection.swift */; };
+		BE5C4A4127B7E59600F0C114 /* CollectionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C4A4027B7E59600F0C114 /* CollectionsResponse.swift */; };
 		BE5E535A263C0A7000E61F75 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E5359263C0A7000E61F75 /* DetailView.swift */; };
 		BE5E5370263C1EB000E61F75 /* EventRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5E536F263C1EB000E61F75 /* EventRowView.swift */; };
 		BEFAF794263D6E6400038D0A /* ConnpassEventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFAF793263D6E6400038D0A /* ConnpassEventRepository.swift */; };
@@ -71,6 +74,9 @@
 		BE18BCCB26230F0900282243 /* StudyGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyGroup.swift; sourceTree = "<group>"; };
 		BE18BCD326230F1200282243 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		BE5C4A3927B7CABE00F0C114 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BE5C4A3B27B7D2BD00F0C114 /* CollectionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRepository.swift; sourceTree = "<group>"; };
+		BE5C4A3E27B7D40C00F0C114 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		BE5C4A4027B7E59600F0C114 /* CollectionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsResponse.swift; sourceTree = "<group>"; };
 		BE5E5359263C0A7000E61F75 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		BE5E536F263C1EB000E61F75 /* EventRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRowView.swift; sourceTree = "<group>"; };
 		BEFAF793263D6E6400038D0A /* ConnpassEventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnpassEventRepository.swift; sourceTree = "<group>"; };
@@ -210,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				BEFAF799263D738F00038D0A /* APIError.swift */,
+				BE5C4A3D27B7D3EE00F0C114 /* OpenSea */,
 				BE18BCCA26230EF500282243 /* Conpass */,
 			);
 			path = Model;
@@ -224,6 +231,15 @@
 			path = Conpass;
 			sourceTree = "<group>";
 		};
+		BE5C4A3D27B7D3EE00F0C114 /* OpenSea */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C4A3E27B7D40C00F0C114 /* Collection.swift */,
+				BE5C4A4027B7E59600F0C114 /* CollectionsResponse.swift */,
+			);
+			path = OpenSea;
+			sourceTree = "<group>";
+		};
 		BE5E536E263C1E8400E61F75 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				BEFAF793263D6E6400038D0A /* ConnpassEventRepository.swift */,
+				BE5C4A3B27B7D2BD00F0C114 /* CollectionRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -452,7 +469,9 @@
 				BE18BCCC26230F0900282243 /* StudyGroup.swift in Sources */,
 				BEFAF79A263D738F00038D0A /* APIError.swift in Sources */,
 				BE5C4A3A27B7CABE00F0C114 /* HomeView.swift in Sources */,
+				BE5C4A3C27B7D2BD00F0C114 /* CollectionRepository.swift in Sources */,
 				BE18BC802621E99E00282243 /* ContentView.swift in Sources */,
+				BE5C4A3F27B7D40C00F0C114 /* Collection.swift in Sources */,
 				BE5E5370263C1EB000E61F75 /* EventRowView.swift in Sources */,
 				BE18BCBA2622E29A00282243 /* FirstView.swift in Sources */,
 				BE5E535A263C0A7000E61F75 /* DetailView.swift in Sources */,
@@ -461,6 +480,7 @@
 				BE18BCD426230F1200282243 /* Event.swift in Sources */,
 				BE18BC7E2621E99E00282243 /* LaboSwiftUIApp.swift in Sources */,
 				BEFAF794263D6E6400038D0A /* ConnpassEventRepository.swift in Sources */,
+				BE5C4A4127B7E59600F0C114 /* CollectionsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

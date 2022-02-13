@@ -6,10 +6,55 @@
 //
 
 import SwiftUI
+import Combine
+
+class HomeViewModel: ObservableObject {
+    @Published var collections: [Collection] = []
+    
+    private let collectionRepository: CollectionRepository
+    private var disposables = Set<AnyCancellable>()
+    
+    init() {
+        collectionRepository = CollectionRepository()
+    }
+    
+    func fetchCollectionData() {
+        print("fetchCollectionData")
+        collectionRepository.fetchCollectionData()
+            .receive(on: DispatchQueue.main)
+            .sink(
+                receiveCompletion: {value in
+                    switch value {
+                    case .failure(let error):
+                        print("fetchCollectionData error: \(error)")
+                    case .finished:
+                        print("fetchCollectionData finished")
+                    }
+                },
+                receiveValue: { [weak self] response in
+                    guard let self = self else { return }
+                    self.collections = response.collections
+                    print("fetchCollectionData success: \(self.collections)")
+                })
+            .store(in: &disposables)
+    }
+}
 
 struct HomeView: View {
+    @ObservedObject var viewModel = HomeViewModel()
+    
+    init() {
+        viewModel.fetchCollectionData()
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(viewModel.collections) { collection in
+                Text("\(collection.name)")
+            }
+            .navigationBarTitle(Text("Collections"))
+        }
+        
     }
 }
 
