@@ -8,7 +8,9 @@
 import Foundation
 
 struct CollectionStats: Codable {
+    var averagePrice: Double
     var numOwners: Int
-    var totalSupply: Int
     var totalSales: Int
+    var totalSupply: Int
+    var totalVolume: Double
 }

@@ -14,5 +14,6 @@ struct Collection: Decodable, Identifiable {
     var bannerImageUrl: String?
     var description: String?
     var stats: CollectionStats?
+    var primaryAssetContracts: [CollectionPrimaryAssetsContract]?
 }
 
