@@ -20,7 +20,7 @@ class CollectionsViewModel: ObservableObject {
     
     func fetchCollectionData() {
         print("fetchCollectionData")
-        collectionRepository.fetchCollectionData()
+        collectionRepository.fetchCollectionData(ownerAddress: "0xc352b534e8b987e036a93539fd6897f53488e56a")
             .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: {value in
@@ -33,7 +33,7 @@ class CollectionsViewModel: ObservableObject {
                 },
                 receiveValue: { [weak self] response in
                     guard let self = self else { return }
-                    self.collections = response.collections
+                    self.collections = response
                     print("fetchCollectionData receiveValue")
                     print("collections: \(self.collections)")
                 })

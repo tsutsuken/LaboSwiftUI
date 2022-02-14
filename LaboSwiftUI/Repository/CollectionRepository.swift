@@ -17,8 +17,8 @@ class CollectionRepository: CollectionRepositoryProtocol {
         self.session = session
     }
     
-    func fetchCollectionData() -> AnyPublisher<CollectionsResponse, APIError> {
-        return fetchData(with: URLComponents(string: "https://api.opensea.io/api/v1/collections?offset=0&limit=50")!)
+    func fetchCollectionData(ownerAddress: String) -> AnyPublisher<[Collection], APIError> {
+        return fetchData(with: URLComponents(string: "https://api.opensea.io/api/v1/collections?offset=0&limit=50&asset_owner=\(ownerAddress)")!)
     }
     
     func fetchData<T>(with components: URLComponents) -> AnyPublisher<T, APIError> where T: Decodable {
