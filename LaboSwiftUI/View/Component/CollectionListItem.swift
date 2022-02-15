@@ -9,6 +9,16 @@ import SwiftUI
 
 struct CollectionListItem: View {
     var collection: Collection
+    private var includesContractInfo = false
+    
+    init(collection: Collection) {
+        self.collection = collection
+        
+        if let primaryAssetContracts = collection.primaryAssetContracts,
+           !primaryAssetContracts.isEmpty {
+            includesContractInfo = true
+        }
+    }
     
     var body: some View {
         HStack {
@@ -25,6 +35,11 @@ struct CollectionListItem: View {
             }
             Text("\(collection.name ?? "")")
                 .font(.headline)
+            if includesContractInfo {
+                Image(systemName: "info.circle.fill")
+                    .resizable()
+                    .frame(width: 16, height: 16, alignment: .center)
+            }
         }
         .frame(height: 72)
         
