@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 
 class CollectionsViewModel: ObservableObject {
+    @Published private(set) var loadingState: LoadingState = .idle
     @Published var collections: [Collection] = []
     
     private let collectionRepository: CollectionRepository
@@ -20,12 +21,15 @@ class CollectionsViewModel: ObservableObject {
     
     func fetchCollectionData() {
         print("fetchCollectionData")
+        loadingState = .loading
         collectionRepository.fetchCollectionData(ownerAddress: "0xc352b534e8b987e036a93539fd6897f53488e56a")
             .receive(on: DispatchQueue.main)
             .sink(
-                receiveCompletion: {value in
+                receiveCompletion: { [weak self] value in
+                    guard let self = self else { return }
                     switch value {
                     case .failure(let error):
+                        self.loadingState = .failed(error)
                         print("fetchCollectionData error: \(error)")
                     case .finished:
                         print("fetchCollectionData finished")
@@ -34,6 +38,7 @@ class CollectionsViewModel: ObservableObject {
                 receiveValue: { [weak self] response in
                     guard let self = self else { return }
                     self.collections = response
+                    self.loadingState = .loaded
                     print("fetchCollectionData receiveValue")
                     print("collections: \(self.collections)")
                 })
@@ -50,12 +55,19 @@ struct CollectionsView: View {
     
     var body: some View {
         NavigationView {
-            List(viewModel.collections) { collection in
-                NavigationLink(destination: CollectionDetailView(collection: collection)) {
-                    CollectionListItem(collection: collection)
+            switch viewModel.loadingState {
+            case .idle, .loading :
+                Text("loading")
+            case .failed(let error):
+                Text("failed: \(error.localizedDescription)")
+            case .loaded:
+                List(viewModel.collections) { collection in
+                    NavigationLink(destination: CollectionDetailView(collection: collection)) {
+                        CollectionListItem(collection: collection)
+                    }
                 }
+                .navigationTitle("Collections")
             }
-            .navigationTitle("Collections")
         }
         .navigationViewStyle(.stack)
     }
