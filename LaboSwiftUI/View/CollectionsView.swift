@@ -26,13 +26,16 @@ class CollectionsViewModel: ObservableObject {
         await fetchCollectionData()
     }
     
+    func onRefresh() async {
+        await fetchCollectionData()
+    }
+    
     @MainActor func fetchCollectionData() async {
         print("fetchCollectionData")
         loadingState = .loading
         
         do {
             let response = try await collectionRepository.fetchCollectionData(ownerAddress: "0xc352b534e8b987e036a93539fd6897f53488e56a")
-            
             print("fetchCollectionData response: \(response.count)")
             self.collections = response
             self.loadingState = .loaded
@@ -49,8 +52,7 @@ struct CollectionsView: View {
     var body: some View {
         NavigationView {
             switch viewModel.loadingState {
-            case .idle, .loading :
-                Text("loading")
+            case .idle : VStack {}
             case .failed(let error):
                 HStack {
                     Spacer()
@@ -69,13 +71,16 @@ struct CollectionsView: View {
                     }
                     Spacer()
                 }
-            case .loaded:
+            case .loading, .loaded:
                 List(viewModel.collections) { collection in
                     NavigationLink(destination: CollectionDetailView(collection: collection)) {
                         CollectionListItem(collection: collection)
                     }
                 }
                 .navigationTitle("Collections")
+                .refreshable(action: {
+                    await viewModel.onRefresh()
+                })
             }
         }
         .navigationViewStyle(.stack)
