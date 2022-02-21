@@ -22,6 +22,10 @@ class CollectionsViewModel: ObservableObject {
         })
     }
     
+    func onRetry() async {
+        await fetchCollectionData()
+    }
+    
     @MainActor func fetchCollectionData() async {
         print("fetchCollectionData")
         loadingState = .loading
@@ -48,7 +52,23 @@ struct CollectionsView: View {
             case .idle, .loading :
                 Text("loading")
             case .failed(let error):
-                Text("failed: \(error.localizedDescription)")
+                HStack {
+                    Spacer()
+                    VStack(spacing: 8) {
+                        Text("Failed to load collections: \(error.localizedDescription)")
+                            .font(.body)
+                            .foregroundColor(Color(uiColor: .secondaryLabel))
+                        Button {
+                            Task {
+                                await viewModel.onRetry()
+                            }
+                        } label: {
+                            Text("Try again")
+                                .foregroundColor(Color(uiColor: .link))
+                        }
+                    }
+                    Spacer()
+                }
             case .loaded:
                 List(viewModel.collections) { collection in
                     NavigationLink(destination: CollectionDetailView(collection: collection)) {
