@@ -17,41 +17,30 @@ class CollectionsViewModel: ObservableObject {
     
     init() {
         collectionRepository = CollectionRepository()
+        Task.init(priority: .userInitiated, operation: {
+            await fetchCollectionData()
+        })
     }
     
-    func fetchCollectionData() {
+    @MainActor func fetchCollectionData() async {
         print("fetchCollectionData")
         loadingState = .loading
-        collectionRepository.fetchCollectionData(ownerAddress: "0xc352b534e8b987e036a93539fd6897f53488e56a")
-            .receive(on: DispatchQueue.main)
-            .sink(
-                receiveCompletion: { [weak self] value in
-                    guard let self = self else { return }
-                    switch value {
-                    case .failure(let error):
-                        self.loadingState = .failed(error)
-                        print("fetchCollectionData error: \(error)")
-                    case .finished:
-                        print("fetchCollectionData finished")
-                    }
-                },
-                receiveValue: { [weak self] response in
-                    guard let self = self else { return }
-                    self.collections = response
-                    self.loadingState = .loaded
-                    print("fetchCollectionData receiveValue")
-                    print("collections: \(self.collections)")
-                })
-            .store(in: &disposables)
+        
+        do {
+            let response = try await collectionRepository.fetchCollectionData(ownerAddress: "0xc352b534e8b987e036a93539fd6897f53488e56a")
+            
+            print("fetchCollectionData response: \(response.count)")
+            self.collections = response
+            self.loadingState = .loaded
+        } catch {
+            print("fetchCollectionData error: \(error)")
+            self.loadingState = .failed(error)
+        }
     }
 }
 
 struct CollectionsView: View {
     @ObservedObject var viewModel = CollectionsViewModel()
-    
-    init() {
-        viewModel.fetchCollectionData()
-    }
     
     var body: some View {
         NavigationView {

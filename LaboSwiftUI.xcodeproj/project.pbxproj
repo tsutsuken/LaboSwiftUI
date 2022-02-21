@@ -26,7 +26,6 @@
 		BE67BAAF27BA0FB200795B94 /* CollectionPrimaryAssetsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE67BAAE27BA0FB200795B94 /* CollectionPrimaryAssetsContract.swift */; };
 		BEC8FA6D27BCB38200106457 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC8FA6C27BCB38200106457 /* LoadingState.swift */; };
 		BEFAF79A263D738F00038D0A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFAF799263D738F00038D0A /* APIError.swift */; };
-		BEFAF7A0263D926500038D0A /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFAF79F263D926500038D0A /* Parsing.swift */; };
 		BF5653EB3D16870C2AD41296 /* Pods_LaboSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7026E8E845D4AF25CD0CBF2F /* Pods_LaboSwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +78,6 @@
 		BE67BAAE27BA0FB200795B94 /* CollectionPrimaryAssetsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrimaryAssetsContract.swift; sourceTree = "<group>"; };
 		BEC8FA6C27BCB38200106457 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		BEFAF799263D738F00038D0A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		BEFAF79F263D926500038D0A /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		FD0892F112E94A4B34259B6C /* Pods-LaboSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaboSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-LaboSwiftUI/Pods-LaboSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,7 +246,6 @@
 		BEFAF79E263D925000038D0A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				BEFAF79F263D926500038D0A /* Parsing.swift */,
 				BEC8FA6C27BCB38200106457 /* LoadingState.swift */,
 			);
 			path = Utility;
@@ -464,7 +461,6 @@
 				BE67BAAF27BA0FB200795B94 /* CollectionPrimaryAssetsContract.swift in Sources */,
 				BE18BCBA2622E29A00282243 /* FirstView.swift in Sources */,
 				BEC8FA6D27BCB38200106457 /* LoadingState.swift in Sources */,
-				BEFAF7A0263D926500038D0A /* Parsing.swift in Sources */,
 				BE18BC7E2621E99E00282243 /* LaboSwiftUIApp.swift in Sources */,
 				BE67BAAB27B90AD500795B94 /* CollectionListItem.swift in Sources */,
 				BE5C4A4127B7E59600F0C114 /* CollectionsResponse.swift in Sources */,
