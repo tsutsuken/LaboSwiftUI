@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0615D1D1070E7329C48B4B24 /* Pods_LaboSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819FF3330A1E55AE3B242501 /* Pods_LaboSwiftUI.framework */; };
 		07CB65CCBFADD8E5E94F2A90 /* Pods_LaboSwiftUI_LaboSwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2BC70349E9DF1AE746C98E /* Pods_LaboSwiftUI_LaboSwiftUIUITests.framework */; };
 		BE18BC7E2621E99E00282243 /* LaboSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BC7D2621E99E00282243 /* LaboSwiftUIApp.swift */; };
 		BE18BC802621E99E00282243 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BC7F2621E99E00282243 /* ContentView.swift */; };
@@ -47,14 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		088EFD4B5CD4122692BB43D4 /* Pods-LaboSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaboSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-LaboSwiftUITests/Pods-LaboSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		15CB5915059E6584180D7521 /* Pods-LaboSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaboSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-LaboSwiftUITests/Pods-LaboSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
-		3EF634F5265B68B874B52B2E /* Pods-LaboSwiftUI-LaboSwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaboSwiftUI-LaboSwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-LaboSwiftUI-LaboSwiftUIUITests/Pods-LaboSwiftUI-LaboSwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7026E8E845D4AF25CD0CBF2F /* Pods_LaboSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaboSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		819FF3330A1E55AE3B242501 /* Pods_LaboSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaboSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99AD443A48635B351F6090DE /* Pods-LaboSwiftUI-LaboSwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaboSwiftUI-LaboSwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-LaboSwiftUI-LaboSwiftUIUITests/Pods-LaboSwiftUI-LaboSwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2BC70349E9DF1AE746C98E /* Pods_LaboSwiftUI_LaboSwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaboSwiftUI_LaboSwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2186520975DC3DD4D0D35B3 /* Pods-LaboSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaboSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-LaboSwiftUI/Pods-LaboSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		BE18BC7A2621E99E00282243 /* LaboSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaboSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE18BC7D2621E99E00282243 /* LaboSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboSwiftUIApp.swift; sourceTree = "<group>"; };
 		BE18BC7F2621E99E00282243 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,7 +72,6 @@
 		BE67BAAE27BA0FB200795B94 /* CollectionPrimaryAssetsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrimaryAssetsContract.swift; sourceTree = "<group>"; };
 		BEC8FA6C27BCB38200106457 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		BEFAF799263D738F00038D0A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		FD0892F112E94A4B34259B6C /* Pods-LaboSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaboSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-LaboSwiftUI/Pods-LaboSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0615D1D1070E7329C48B4B24 /* Pods_LaboSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,19 +111,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5A72738163F3470D61CDBF9E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FD0892F112E94A4B34259B6C /* Pods-LaboSwiftUI.debug.xcconfig */,
-				A2186520975DC3DD4D0D35B3 /* Pods-LaboSwiftUI.release.xcconfig */,
-				99AD443A48635B351F6090DE /* Pods-LaboSwiftUI-LaboSwiftUIUITests.debug.xcconfig */,
-				3EF634F5265B68B874B52B2E /* Pods-LaboSwiftUI-LaboSwiftUIUITests.release.xcconfig */,
-				088EFD4B5CD4122692BB43D4 /* Pods-LaboSwiftUITests.debug.xcconfig */,
-				15CB5915059E6584180D7521 /* Pods-LaboSwiftUITests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		BE18BC712621E99E00282243 = {
 			isa = PBXGroup;
 			children = (
@@ -139,7 +118,6 @@
 				BE18BC8E2621E99F00282243 /* LaboSwiftUITests */,
 				BE18BC992621E99F00282243 /* LaboSwiftUIUITests */,
 				BE18BC7B2621E99E00282243 /* Products */,
-				5A72738163F3470D61CDBF9E /* Pods */,
 				34FD37235323BC5C7E7165A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -258,7 +236,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE18BC9F2621E99F00282243 /* Build configuration list for PBXNativeTarget "LaboSwiftUI" */;
 			buildPhases = (
-				80D8FCCA1147F1AB61AAC7F5 /* [CP] Check Pods Manifest.lock */,
 				BE18BC762621E99E00282243 /* Sources */,
 				BE18BC772621E99E00282243 /* Frameworks */,
 				BE18BC782621E99E00282243 /* Resources */,
@@ -417,28 +394,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LaboSwiftUI-LaboSwiftUIUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		80D8FCCA1147F1AB61AAC7F5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LaboSwiftUI-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -618,7 +573,6 @@
 		};
 		BE18BCA02621E99F00282243 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD0892F112E94A4B34259B6C /* Pods-LaboSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -641,7 +595,6 @@
 		};
 		BE18BCA12621E99F00282243 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2186520975DC3DD4D0D35B3 /* Pods-LaboSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -664,7 +617,6 @@
 		};
 		BE18BCA32621E99F00282243 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 088EFD4B5CD4122692BB43D4 /* Pods-LaboSwiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -687,7 +639,6 @@
 		};
 		BE18BCA42621E99F00282243 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15CB5915059E6584180D7521 /* Pods-LaboSwiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -710,7 +661,6 @@
 		};
 		BE18BCA62621E99F00282243 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99AD443A48635B351F6090DE /* Pods-LaboSwiftUI-LaboSwiftUIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -731,7 +681,6 @@
 		};
 		BE18BCA72621E99F00282243 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EF634F5265B68B874B52B2E /* Pods-LaboSwiftUI-LaboSwiftUIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
