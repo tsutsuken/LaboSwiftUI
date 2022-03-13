@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-class CollectionsViewModel: ObservableObject {
+@MainActor class CollectionsViewModel: ObservableObject {
     @Published private(set) var loadingState: LoadingState = .idle
     @Published var collections: [Collection] = []
     
@@ -30,7 +30,7 @@ class CollectionsViewModel: ObservableObject {
         await fetchCollectionData()
     }
     
-    @MainActor func fetchCollectionData() async {
+    func fetchCollectionData() async {
         print("fetchCollectionData")
         loadingState = .loading
         
