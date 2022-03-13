@@ -136,10 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				BE18BC7D2621E99E00282243 /* LaboSwiftUIApp.swift */,
-				BE18BCB42622E26300282243 /* View */,
-				BEFAF792263D6DD300038D0A /* Repository */,
-				BE18BCC6262307BB00282243 /* Model */,
-				BEFAF79E263D925000038D0A /* Utility */,
+				BE18BCB42622E26300282243 /* UI */,
+				BEFAF792263D6DD300038D0A /* Repositories */,
+				BE18BCC6262307BB00282243 /* Models */,
+				BEFAF79E263D925000038D0A /* Utilities */,
 				BE18BC812621E99F00282243 /* Assets.xcassets */,
 				BE18BC862621E99F00282243 /* Info.plist */,
 				BE18BC832621E99F00282243 /* Preview Content */,
@@ -173,25 +173,22 @@
 			path = LaboSwiftUIUITests;
 			sourceTree = "<group>";
 		};
-		BE18BCB42622E26300282243 /* View */ = {
+		BE18BCB42622E26300282243 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				BE5E536E263C1E8400E61F75 /* Component */,
-				BE18BC7F2621E99E00282243 /* ContentView.swift */,
-				BE18BCB92622E29A00282243 /* FirstView.swift */,
-				BE5C4A3927B7CABE00F0C114 /* CollectionsView.swift */,
-				BE5C4A4327B8D89600F0C114 /* CollectionDetailView.swift */,
+				BE5E536E263C1E8400E61F75 /* Components */,
+				BEC8FAC127DDE98100106457 /* Screens */,
 			);
-			path = View;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		BE18BCC6262307BB00282243 /* Model */ = {
+		BE18BCC6262307BB00282243 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				BEFAF799263D738F00038D0A /* APIError.swift */,
 				BE5C4A3D27B7D3EE00F0C114 /* OpenSea */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BE5C4A3D27B7D3EE00F0C114 /* OpenSea */ = {
@@ -205,28 +202,39 @@
 			path = OpenSea;
 			sourceTree = "<group>";
 		};
-		BE5E536E263C1E8400E61F75 /* Component */ = {
+		BE5E536E263C1E8400E61F75 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				BE67BAAA27B90AD500795B94 /* CollectionListItem.swift */,
 			);
-			path = Component;
+			path = Components;
 			sourceTree = "<group>";
 		};
-		BEFAF792263D6DD300038D0A /* Repository */ = {
+		BEC8FAC127DDE98100106457 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BE18BC7F2621E99E00282243 /* ContentView.swift */,
+				BE18BCB92622E29A00282243 /* FirstView.swift */,
+				BE5C4A3927B7CABE00F0C114 /* CollectionsView.swift */,
+				BE5C4A4327B8D89600F0C114 /* CollectionDetailView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BEFAF792263D6DD300038D0A /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 				BE5C4A3B27B7D2BD00F0C114 /* CollectionRepository.swift */,
 			);
-			path = Repository;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
-		BEFAF79E263D925000038D0A /* Utility */ = {
+		BEFAF79E263D925000038D0A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				BEC8FA6C27BCB38200106457 /* LoadingState.swift */,
 			);
-			path = Utility;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
