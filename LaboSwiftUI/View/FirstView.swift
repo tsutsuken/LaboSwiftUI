@@ -13,7 +13,7 @@ class FirstViewModel: ObservableObject {
 }
 
 struct FirstView: View {
-    @ObservedObject var viewModel = FirstViewModel()
+    @StateObject var viewModel = FirstViewModel()
     
     var body: some View {
         VStack {

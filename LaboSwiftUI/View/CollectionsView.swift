@@ -47,7 +47,7 @@ class CollectionsViewModel: ObservableObject {
 }
 
 struct CollectionsView: View {
-    @ObservedObject var viewModel = CollectionsViewModel()
+    @StateObject var viewModel = CollectionsViewModel()
     
     var body: some View {
         NavigationView {
