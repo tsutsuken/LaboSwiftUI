@@ -48,6 +48,7 @@ struct CollectionListItem: View {
 
 struct CollectionListItem_Previews: PreviewProvider {
     static var previews: some View {
-        CollectionListItem(collection: Collection())
+        CollectionListItem(collection: dev.collection)
+            .previewLayout(.sizeThatFits)
     }
 }
