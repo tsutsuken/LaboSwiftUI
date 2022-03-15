@@ -138,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				BE18BC7D2621E99E00282243 /* LaboSwiftUIApp.swift */,
-				BE18BCB42622E26300282243 /* UI */,
+				BE18BCB42622E26300282243 /* Views */,
 				BEFAF792263D6DD300038D0A /* Repositories */,
 				BE18BCC6262307BB00282243 /* Models */,
 				BEFAF79E263D925000038D0A /* Utilities */,
@@ -176,13 +176,13 @@
 			path = LaboSwiftUIUITests;
 			sourceTree = "<group>";
 		};
-		BE18BCB42622E26300282243 /* UI */ = {
+		BE18BCB42622E26300282243 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				BE5E536E263C1E8400E61F75 /* Components */,
 				BEC8FAC127DDE98100106457 /* Screens */,
 			);
-			path = UI;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		BE18BCC6262307BB00282243 /* Models */ = {
