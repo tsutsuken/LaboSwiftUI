@@ -14,8 +14,9 @@ import Combine
     private let collectionRepository: CollectionRepository
     private var disposables = Set<AnyCancellable>()
     
-    init() {
-        collectionRepository = CollectionRepository()
+    init(collectionRepository: CollectionRepository = CollectionRepository()) {
+        self.collectionRepository = collectionRepository
+        
         Task.init(priority: .userInitiated, operation: {
             await fetchCollectionData()
         })
