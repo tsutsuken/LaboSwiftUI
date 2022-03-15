@@ -48,7 +48,9 @@ struct CollectionListItem: View {
 
 struct CollectionListItem_Previews: PreviewProvider {
     static var previews: some View {
-        CollectionListItem(collection: dev.collection)
-            .previewLayout(.sizeThatFits)
+        ColorSchemePreview {
+            CollectionListItem(collection: dev.collection)
+                .previewLayout(.sizeThatFits)
+        }
     }
 }
