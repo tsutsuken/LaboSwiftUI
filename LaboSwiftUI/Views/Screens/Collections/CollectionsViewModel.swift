@@ -7,7 +7,7 @@
 
 import Combine
 
-@MainActor class CollectionsViewModel: ObservableObject {
+class CollectionsViewModel: ObservableObject {
     @Published private(set) var loadingState: LoadingState = .idle
     @Published var collections: [Collection] = []
     
@@ -30,7 +30,7 @@ import Combine
         await fetchCollectionData()
     }
     
-    func fetchCollectionData() async {
+    @MainActor func fetchCollectionData() async {
         print("fetchCollectionData")
         loadingState = .loading
         
