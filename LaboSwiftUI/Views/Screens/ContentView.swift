@@ -17,11 +17,11 @@ struct ContentView: View {
                         Text("Collections")
                     }
                 }
-            FirstView()
+            CollectionsView()
                 .tabItem {
                     VStack {
                         Image(systemName: "house")
-                        Text("First")
+                        Text("Collections")
                     }
             }
         }
