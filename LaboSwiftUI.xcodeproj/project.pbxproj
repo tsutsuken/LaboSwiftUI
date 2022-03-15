@@ -23,6 +23,7 @@
 		BE67BAAD27B9387F00795B94 /* CollectionStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE67BAAC27B9387F00795B94 /* CollectionStats.swift */; };
 		BE67BAAF27BA0FB200795B94 /* CollectionPrimaryAssetsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE67BAAE27BA0FB200795B94 /* CollectionPrimaryAssetsContract.swift */; };
 		BEB4D07627E02AC5009107F6 /* ColorSchemePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB4D07527E02AC5009107F6 /* ColorSchemePreview.swift */; };
+		BEB4D07927E04B91009107F6 /* CollectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB4D07827E04B91009107F6 /* CollectionsViewModel.swift */; };
 		BEC8FA6D27BCB38200106457 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC8FA6C27BCB38200106457 /* LoadingState.swift */; };
 		BEC8FAC527E0109500106457 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC8FAC427E0109500106457 /* PreviewProvider.swift */; };
 		BEFAF79A263D738F00038D0A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFAF799263D738F00038D0A /* APIError.swift */; };
@@ -71,6 +72,7 @@
 		BE67BAAC27B9387F00795B94 /* CollectionStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionStats.swift; sourceTree = "<group>"; };
 		BE67BAAE27BA0FB200795B94 /* CollectionPrimaryAssetsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrimaryAssetsContract.swift; sourceTree = "<group>"; };
 		BEB4D07527E02AC5009107F6 /* ColorSchemePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemePreview.swift; sourceTree = "<group>"; };
+		BEB4D07827E04B91009107F6 /* CollectionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewModel.swift; sourceTree = "<group>"; };
 		BEC8FA6C27BCB38200106457 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		BEC8FAC427E0109500106457 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		BEFAF799263D738F00038D0A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -222,11 +224,20 @@
 			path = Previews;
 			sourceTree = "<group>";
 		};
+		BEB4D07727E04B79009107F6 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C4A3927B7CABE00F0C114 /* CollectionsView.swift */,
+				BEB4D07827E04B91009107F6 /* CollectionsViewModel.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
 		BEC8FAC127DDE98100106457 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				BE18BC7F2621E99E00282243 /* ContentView.swift */,
-				BE5C4A3927B7CABE00F0C114 /* CollectionsView.swift */,
+				BEB4D07727E04B79009107F6 /* Collections */,
 				BE5C4A4327B8D89600F0C114 /* CollectionDetailView.swift */,
 			);
 			path = Screens;
@@ -440,6 +451,7 @@
 				BE67BAAD27B9387F00795B94 /* CollectionStats.swift in Sources */,
 				BE18BC802621E99E00282243 /* ContentView.swift in Sources */,
 				BEC8FAC527E0109500106457 /* PreviewProvider.swift in Sources */,
+				BEB4D07927E04B91009107F6 /* CollectionsViewModel.swift in Sources */,
 				BE5C4A3F27B7D40C00F0C114 /* Collection.swift in Sources */,
 				BE67BAAF27BA0FB200795B94 /* CollectionPrimaryAssetsContract.swift in Sources */,
 				BEB4D07627E02AC5009107F6 /* ColorSchemePreview.swift in Sources */,

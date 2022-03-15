@@ -6,45 +6,6 @@
 //
 
 import SwiftUI
-import Combine
-
-@MainActor class CollectionsViewModel: ObservableObject {
-    @Published private(set) var loadingState: LoadingState = .idle
-    @Published var collections: [Collection] = []
-    
-    private let collectionRepository: CollectionRepository
-    private var disposables = Set<AnyCancellable>()
-    
-    init() {
-        collectionRepository = CollectionRepository()
-        Task.init(priority: .userInitiated, operation: {
-            await fetchCollectionData()
-        })
-    }
-    
-    func onRetry() async {
-        await fetchCollectionData()
-    }
-    
-    func onRefresh() async {
-        await fetchCollectionData()
-    }
-    
-    func fetchCollectionData() async {
-        print("fetchCollectionData")
-        loadingState = .loading
-        
-        do {
-            let response = try await collectionRepository.fetchCollectionData(ownerAddress: "0xc352b534e8b987e036a93539fd6897f53488e56a")
-            print("fetchCollectionData response: \(response.count)")
-            self.collections = response
-            self.loadingState = .loaded
-        } catch {
-            print("fetchCollectionData error: \(error)")
-            self.loadingState = .failed(error)
-        }
-    }
-}
 
 struct CollectionsView: View {
     @StateObject var viewModel = CollectionsViewModel()
