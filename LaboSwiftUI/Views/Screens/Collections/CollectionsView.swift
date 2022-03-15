@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct CollectionsView: View {
-    @StateObject var viewModel = CollectionsViewModel()
+    @StateObject private var viewModel: CollectionsViewModel
+    
+    init(viewModel: CollectionsViewModel = CollectionsViewModel()) {
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         NavigationView {
