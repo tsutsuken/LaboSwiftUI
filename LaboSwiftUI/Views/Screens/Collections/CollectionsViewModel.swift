@@ -17,9 +17,9 @@ class CollectionsViewModel: ObservableObject {
     init(collectionRepository: CollectionRepository = CollectionRepository()) {
         self.collectionRepository = collectionRepository
         
-        Task.init(priority: .userInitiated, operation: {
+        Task {
             await fetchCollectionData()
-        })
+        }
     }
     
     func onRetry() async {
