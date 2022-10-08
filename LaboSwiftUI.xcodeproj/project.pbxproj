@@ -75,6 +75,7 @@
 		BEB4D07827E04B91009107F6 /* CollectionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewModel.swift; sourceTree = "<group>"; };
 		BEC8FA6C27BCB38200106457 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		BEC8FAC427E0109500106457 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		BEF3C17C28F1507D00D54605 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BEF3C17D28F150F300D54605 /* .xcode-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".xcode-version"; sourceTree = "<group>"; };
 		BEFAF799263D738F00038D0A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				BEF3C17D28F150F300D54605 /* .xcode-version */,
+				BEF3C17C28F1507D00D54605 /* README.md */,
 				BE18BC7C2621E99E00282243 /* LaboSwiftUI */,
 				BE18BC8E2621E99F00282243 /* LaboSwiftUITests */,
 				BE18BC992621E99F00282243 /* LaboSwiftUIUITests */,
