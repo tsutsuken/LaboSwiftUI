@@ -42,7 +42,7 @@ struct CollectionsView: View {
                         CollectionListItem(collection: collection)
                     }
                 }
-                .navigationTitle("Collections")
+                .navigationTitle("Collections(0xc352...)")
                 .refreshable(action: {
                     await viewModel.onRefresh()
                 })

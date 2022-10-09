@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		07CB65CCBFADD8E5E94F2A90 /* Pods_LaboSwiftUI_LaboSwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2BC70349E9DF1AE746C98E /* Pods_LaboSwiftUI_LaboSwiftUIUITests.framework */; };
 		BE18BC7E2621E99E00282243 /* LaboSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BC7D2621E99E00282243 /* LaboSwiftUIApp.swift */; };
-		BE18BC802621E99E00282243 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BC7F2621E99E00282243 /* ContentView.swift */; };
 		BE18BC822621E99F00282243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE18BC812621E99F00282243 /* Assets.xcassets */; };
 		BE18BC852621E99F00282243 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE18BC842621E99F00282243 /* Preview Assets.xcassets */; };
 		BE18BC902621E99F00282243 /* LaboSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE18BC8F2621E99F00282243 /* LaboSwiftUITests.swift */; };
@@ -53,7 +52,6 @@
 		9F2BC70349E9DF1AE746C98E /* Pods_LaboSwiftUI_LaboSwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaboSwiftUI_LaboSwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE18BC7A2621E99E00282243 /* LaboSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaboSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE18BC7D2621E99E00282243 /* LaboSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboSwiftUIApp.swift; sourceTree = "<group>"; };
-		BE18BC7F2621E99E00282243 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE18BC812621E99F00282243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE18BC842621E99F00282243 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE18BC862621E99F00282243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -240,7 +238,6 @@
 		BEC8FAC127DDE98100106457 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				BE18BC7F2621E99E00282243 /* ContentView.swift */,
 				BEB4D07727E04B79009107F6 /* Collections */,
 				BE5C4A4327B8D89600F0C114 /* CollectionDetailView.swift */,
 			);
@@ -453,7 +450,6 @@
 				BE5C4A3A27B7CABE00F0C114 /* CollectionsView.swift in Sources */,
 				BE5C4A3C27B7D2BD00F0C114 /* CollectionRepository.swift in Sources */,
 				BE67BAAD27B9387F00795B94 /* CollectionStats.swift in Sources */,
-				BE18BC802621E99E00282243 /* ContentView.swift in Sources */,
 				BEC8FAC527E0109500106457 /* PreviewProvider.swift in Sources */,
 				BEB4D07927E04B91009107F6 /* CollectionsViewModel.swift in Sources */,
 				BE5C4A3F27B7D40C00F0C114 /* Collection.swift in Sources */,
